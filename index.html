@@ -3,92 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Pagina energía solar</title>
-</head>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Página Energía Solar</title>
+    <scroll-container>
+        <scroll-page id="Inicio"></scroll-page>
+    </scroll-container>
 <body>
     <main class="main">
         <section class="contenedor section-1">
             <header class="header">
                 <div class="img">
-                    <img src="img/logo.png" alt="Logo de la página energia solar">
+                    <div class="s3-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    
                 </div>
 
-                <nav class="menu">
-                    <a href="#">Inicio</a>
-                    <a href="#">Conocenos</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Galería</a>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                
+                <nav class="menu" id="menu">
+                    <a href="#Inicio">Inicio</a>
+                    <a href="#">Conócenos</a>
+                    <a href="#s2-contenido">Servicios</a>
+                    <a href="Galeria.html">Galería</a>
                     <a href="#">Clientes</a>
-                    <a href="#">Contacto</a>
-
+                    <a href="Contactanos.html">Contáctanos</a>
                 </nav>
             </header>
         </section>
+        <scroll-container>
+                            <scroll-page id="s2-contenido"></scroll-page>
+        </scroll-container> 
 
         <section class="contenedor section-2">
             <article class="s2-textos">
                 <h1 class="titulo">Bienvenido</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste tenetur doloremque aperiam vitae earum facere eius dolore dignissimos? Mollitia, obcaecati. Amet molestiae aut laudantium. Soluta harum necessitatibus saepe est?</p>
+                <p>Descubre el poder de la energía solar y las tecnologías renovables. Ofrecemos soluciones innovadoras y sostenibles para un futuro más limpio y eficiente energéticamente.</p>
             </article>
-
+                
             <article class="s2-img">
                 <aside class="s2-contenido">
                     <div class="contenido-img">
                         <img src="img/img-1.jpg" alt="">
-                    </div>
+                    </div>                        
                     <div class="contenedor-texto">
-                        <h2>Energía solar</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut porro aspernatur quod, dolorum mollitia enim obcaecati nostrum saepe modi quo doloremque dolorem nemo voluptates voluptatum libero labore dignissimos! Enim?</p>
+                        <h2>Energía Solar</h2>
+                        <p>Aprovecha la energía del sol con nuestros sistemas fotovoltaicos de última generación. Reduce tus costos energéticos y contribuye al cuidado del medio ambiente.</p>
                         <a href="#">VER MÁS</a>
                     </div>
                 </aside>
+                
                 <aside class="s2-contenido">
                     <div class="contenido-img">
                         <img src="img/img-2.jpg" alt="">
-                    </div>
+                    </div>                    
                     <div class="contenedor-texto">
-                        <h2>Sistema Infraroja</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut porro aspernatur quod, dolorum mollitia enim obcaecati nostrum saepe modi quo doloremque dolorem nemo voluptates voluptatum libero labore dignissimos! Enim?</p>
+                        <h2>Sistema Infrarojo</h2>
+                        <p>Tecnología avanzada de calefacción infrarroja que proporciona calor eficiente y confortable para tu hogar o negocio con mínimo consumo energético.</p>
                         <a href="#">VER MÁS</a>
                     </div>
                 </aside>
-            </aside>
-            <aside class="s2-contenido">
-                <div class="contenido-img">
-                    <img src="img/img-3.jpg" alt="">
-                </div>
-                <div class="contenedor-texto">
-                    <h2>Energias renovables</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut porro aspernatur quod, dolorum mollitia enim obcaecati nostrum saepe modi quo doloremque dolorem nemo voluptates voluptatum libero labore dignissimos! Enim?</p>
-                    <a href="#">VER MÁS</a>
-                </div>
-            </aside>
+                
+                <aside class="s2-contenido">
+                    <div class="contenido-img">
+                        <img src="img/img-3.jpg" alt="">
+                    </div>                    
+                    <div class="contenedor-texto">
+                        <h2>Energías Renovables</h2>
+                        <p>Soluciones integrales en energías renovables: eólica, hidráulica y biomasa. Creamos sistemas personalizados para cada necesidad energética.</p>
+                        <a href="#">VER MÁS                    
+                        </a>
+                    </div>
+                </aside>
+      
             </article>
         </section>
 
         <section class="contenedor-3">
-            <hr>
-            <div class="s3-contenido">
-                <div class="s3-logo">
-                    <img src="img/logo.png" alt="Logo de la página energia solar">>
+            <div class="contenedor">
+                <hr>
+                <div class="s3-contenido">
+                    <div class="s3-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    
+                    <div class="s3-texto">
+                        <h3>Estamos en:</h3>
+                        <p>Av. Continental</p>
+                        <p>N° 144, Los Olivos, Lima</p>
+                        <p>Tel. +51 xxx-xxxx</p>
+                        <a href="https://continental.edu.pe">continental.edu.pe</a>
+                                            
+                    </div>
                 </div>
-                <div class="s3-texto">
-                    <h3>Estamos en:</h3>
-                    <p>Av. continental</p>
-                    <p>N° 144, Los Olivos, Lima</p>
-                    <p>Tel. xxxxxx</p>
-                    <a href="">continental.edu.pe</a>
-                </div>
+                <footer class="footer">
+                    &copy; <a href="#" class="autor">Franklin Pucho, 2025</a>
+                </footer>
             </div>
-            <footer class="footer">
-                &copy;<a href="#" class="autor">Franklin Pucho, 2025</a>
-            </footer>
-            
         </section>
-
     </main>
-    
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById('menu');
+            const toggle = document.querySelector('.menu-toggle');
+            
+            if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
